@@ -1,0 +1,14 @@
+{{#each burger}}
+<div class="row">
+    <p><span class="label">#</span> {{this.id}}</p>
+    <p><span class="label"></span> {{this.type}}</p>
+</div>
+    <button data-id="{{this.id}}" class="eatBurger">Devour</button>
+
+{{/each}}
+
+<form class="create-form">
+    <input placeholder="Type burger here" name="type" id="burger"></input>
+        <br>
+    <button type="submit">Submit</button>
+</form>
